@@ -53,6 +53,7 @@ export default Uploader.extend({
       }
 
       return this.ajax(url, this.createFormData(file, json));
+      return this.ajax(url, file, get(this, 'method'));
     });
   },
 
